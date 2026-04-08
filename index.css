@@ -126,6 +126,10 @@ body {
     display: flex;
 }
 
+.animal-icons img {
+    height: 100%;
+}
+
 .animal-icon:hover {
     cursor: url("assets/finger.png"), auto;
 }
