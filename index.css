@@ -4,13 +4,13 @@
 }
 
 :root {
-    /* cursor: url("assets/pointer.webp"), auto; */
+    cursor: url("assets/pointer.png"), auto;
     user-select: none;
 }
 
 a,
 button {
-    /* cursor: url("assets/finger.webp"), auto; */
+    cursor: url("assets/finger.png"), auto;
 }
 
 body {
@@ -44,8 +44,9 @@ body {
 
     background-color: white;
 
+    min-width: fit-content;
     width: 50%;
-    max-width: 500px;
+    max-width: 350px;
     border: 5px blue solid;
 }
 
@@ -70,7 +71,7 @@ body {
     font-size: 20px;
 
     padding-bottom: 2px;
-    padding-left: 2px;
+    padding-left: 1.75px;
 }
 
 .popup-exit-bar button {
@@ -107,9 +108,36 @@ body {
 .popup-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     font-family: 'Tahoma8Px';
     font-size: 30px;
 
     padding: 10px;
+}
+
+.animal-icons {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+
+    height: 100px;
+    display: flex;
+}
+
+.animal-icon:hover {
+    cursor: url("assets/finger.png"), auto;
+}
+
+.monkey-icon:hover {
+    content: url("assets/icons/monkey-hover.png");
+}
+
+.cat-icon:hover {
+    content: url("assets/icons/cat-hover.png");
+}
+
+.frog-icon:hover {
+    content: url("assets/icons/frog-hover.png")
 }
