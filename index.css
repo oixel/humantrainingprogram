@@ -1,0 +1,102 @@
+@font-face {
+    font-family: Tahoma8Px;
+    src: url("assets/fonts/tahoma-8px.otf") format("opentype");
+}
+
+:root {
+    /* cursor: url("assets/pointer.webp"), auto; */
+    user-select: none;
+    font-family: 'Tahoma8Px';
+    font-size: 30px;
+}
+
+a,
+button {
+    /* cursor: url("assets/finger.webp"), auto; */
+}
+
+body {
+    min-height: 100vh;
+    overflow-y: hidden;
+    background-image: url("assets/images/background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    width: 50%;
+    max-width: 500px;
+    border: 5px blue solid;
+}
+
+.popup-exit-bar {
+    background-color: blue;
+
+    height: 25px;
+    padding: 2px 0px 6px 0px;
+    min-width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.popup-exit-bar p {
+    color: white;
+    font: bold;
+
+    font-weight: bold;
+    font-size: 20px;
+
+    padding-bottom: 2px;
+    padding-left: 1px;
+}
+
+.popup-exit-bar button {
+    margin-left: auto;
+    height: 100%;
+
+    aspect-ratio: 1/1;
+
+    border: 2px white solid;
+    color: white;
+    background: red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-exit-bar button:hover {
+    background-color: rgb(255, 89, 89);
+    cursor: pointer;
+}
+
+.popup-exit-bar button:active {
+    background-color: rgb(130, 30, 30);
+}
+
+.icon-filler {
+    height: 100%;
+
+    aspect-ratio: 1/1;
+    background-color: red;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
+}
