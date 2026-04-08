@@ -9,3 +9,18 @@ function parallax(event) {
         elem.style.transform = `translateX(${x}px) translateY(${y}px)`;
     });
 }
+
+let popup = document.querySelector(".popup");
+let htpEXE = document.querySelector(".htp-exe");
+
+let exitButton = document.querySelector(".popup-exit-button");
+
+exitButton.addEventListener("mousedown", () => {
+    htpEXE.classList.remove("hidden");
+    popup.classList.add("hidden");
+});
+
+htpEXE.addEventListener("mousedown", () => {
+    popup.classList.remove("hidden");
+    htpEXE.classList.add("hidden");
+});

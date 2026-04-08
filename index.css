@@ -62,7 +62,7 @@ body {
     gap: 10px;
 }
 
-.popup-exit-bar p {
+.popup-app-name {
     color: white;
     font: bold;
 
@@ -74,7 +74,7 @@ body {
     padding-left: 1.75px;
 }
 
-.popup-exit-bar button {
+.popup-exit-button {
     margin-left: auto;
     height: 100%;
 
@@ -144,4 +144,46 @@ body {
 
 .frog-icon:hover {
     content: url("assets/icons/frog-hover.png")
+}
+
+/* 
+    HTP .exe file on home page when the popup box is closed
+*/
+
+.htp-exe {
+    width: 65px;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 5px;
+}
+
+.htp-exe:hover {
+    background-color: rgba(172, 172, 172, 0.35);
+    cursor: url("assets/finger.png"), auto;
+}
+
+.htp-exe p {
+    margin: 0;
+
+    font-family: 'Tahoma8Px';
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 15px;
+    text-shadow: 1px 1px 4px black;
+}
+
+.htp-exe-icon {
+    height: 100%;
+
+    aspect-ratio: 1/1;
+    background-color: red;
+}
+
+.hidden {
+    display: none;
 }
