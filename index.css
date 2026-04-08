@@ -89,12 +89,11 @@ body {
     align-items: center;
 }
 
-.popup-exit-bar button:hover {
+.popup-exit-button:hover {
     background-color: rgb(255, 89, 89);
-    cursor: pointer;
 }
 
-.popup-exit-bar button:active {
+.popup-exit-button:active {
     background-color: rgb(130, 30, 30);
 }
 
