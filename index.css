@@ -97,11 +97,10 @@ body {
     background-color: rgb(130, 30, 30);
 }
 
-.icon-filler {
+.popup-icon {
     height: 100%;
 
     aspect-ratio: 1/1;
-    background-color: red;
 }
 
 .popup-content {
