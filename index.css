@@ -127,13 +127,14 @@ body {
 /* Let anchor size the image */
 .animal-icons img {
     height: 100%;
+
+    /* Prevent the inline gap that Safari adds */
     display: block;
-    /* Preent the inline gap that Safari adds */
 }
 
+/* Prevent overlapping on Safari */
 .animal-icon {
     display: flex;
-    /* Prevent overlapping on Safari */
     align-items: center;
     height: 100%;
 }
