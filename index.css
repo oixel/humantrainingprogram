@@ -132,16 +132,19 @@ body {
     cursor: url("assets/finger.png"), auto;
 }
 
-.monkey-icon:hover {
-    content: url("assets/icons/monkey-hover.png");
+
+/* Allow swapping of animal icons when mouse hovers / exits hover */
+
+.animal-icon .hover {
+    display: none;
 }
 
-.cat-icon:hover {
-    content: url("assets/icons/cat-hover.png");
+.animal-icon:hover .normal {
+    display: none;
 }
 
-.frog-icon:hover {
-    content: url("assets/icons/frog-hover.png")
+.animal-icon:hover .hover {
+    display: block;
 }
 
 /* 
